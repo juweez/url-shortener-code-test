@@ -26,6 +26,20 @@ get '/' do
   erb :index
 end
 
+get '/:id' do
+  if Cache::urls.key?(params['id'])
+    redirect_url = Cache::urls[params['id']]
+
+    unless redirect_url.start_with?('http')
+      redirect_url = "http://#{redirect_url}"
+    end
+
+    redirect(redirect_url)
+  else
+    redirect(request.base_url)
+  end
+end
+
 post '/' do
   original_url = params[:url]
   short_url_id = UrlShortener.new(original_url).generate
