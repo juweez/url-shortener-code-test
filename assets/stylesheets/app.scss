@@ -6,7 +6,12 @@
 @import 'base/layout';
 
 /* Atoms */
+@import 'modules/atoms/button';
 @import 'modules/atoms/heading';
+@import 'modules/atoms/input';
+
+/* Molecules */
+@import 'modules/molecules/form';
 
 /* Utilities */
 @import 'base/utilities';

@@ -1,0 +1,13 @@
+.m-form {}
+
+.m-form__group {
+  margin-bottom: 1rem;
+}
+
+.m-form__group--inline {
+  display: flex;
+
+  .a-input {
+    width: 100%;
+  }
+}

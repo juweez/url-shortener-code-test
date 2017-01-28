@@ -1,0 +1,10 @@
+.a-input {
+  padding: 1em;
+  font-size: 1em;
+  border: 1px solid $color-light-grey;
+
+  &:focus {
+    outline: 1px solid $color-green;
+    outline-offset: -1px;
+  }
+}
