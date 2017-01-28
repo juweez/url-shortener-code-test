@@ -1,0 +1,31 @@
+.m-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.m-list__item {
+  padding: 1em;
+  border-bottom: 1px solid $color-light-grey;
+  word-wrap: break-word;
+}
+
+.m-list__item--highlight {
+  animation: highlight ease-in-out 1.5s 0.2s;
+}
+
+.m-list__text {
+  margin-bottom: 0.5em;
+
+  a {
+    color: $color-dark-grey;
+
+    &:hover {
+      color: $color-black;
+    }
+  }
+}
+
+.m-list__subtext {
+  margin-bottom: 0;
+}

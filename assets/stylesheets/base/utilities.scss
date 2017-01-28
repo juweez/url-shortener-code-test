@@ -1,3 +1,13 @@
 .u-center {
   text-align: center;
 }
+
+@keyframes highlight {
+  0% {
+    background-color: $color-snow-white;
+  }
+
+  100% {
+    background-color: $color-white;
+  }
+}
