@@ -7,3 +7,12 @@ fieldset {
   padding: 0;
   border: 0;
 }
+
+::selection {
+  color: $color-white;
+  background-color: $color-green;
+}
+::-moz-selection {
+  color: $color-white;
+  background-color: $color-green;
+}

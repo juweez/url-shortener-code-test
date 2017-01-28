@@ -10,15 +10,17 @@
     <section class="l-container l-container--strong">
       <div class="l-content">
         <h1 class="a-heading a-heading--primary a-heading--inverse u-center">URL Shortener</h1>
-        <form class="m-form" action="/" method="POST">
+        <form class="m-form js-shortener-form" action="/" method="POST">
           <fieldset>
             <div class="m-form__group m-form__group--inline">
-              <input class="a-input" type="text" name="url" placeholder="Enter link to shorten" required/>
+              <input class="a-input js-shortener-input" type="text" name="url" placeholder="Enter link to shorten" required/>
               <input class="a-button" type="submit" value="Shorten"/>
             </div>
           </fieldset>
         </form>
       </div>
     </section>
+
+    <script src="js/app.js"></script>
   </body>
 </html>
