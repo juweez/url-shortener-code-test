@@ -1,20 +1,20 @@
 # Url Shortener Code Test
 
-We'd like you to create a URL shortening service.
-- It should have a route where you can send a POST request with a URL in the body, which
-returns a short URL.
-- When you send a GET request to a previously returned URL, it should redirect to the
-POSTed URL.
-- We'd also like a simple frontend that can create and display shortened URLs without
-reloading the page.
-- For simplicity, don't worry about persisting the URLs between restarts (ie, we don't
-need it to talk to an external database).
+This is a simple Sinatra app creates short URLs and stores them in a hash. It
+uses Sass for writing CSS and vanilla Javascript.
 
-Use whatever languages and frameworks you are comfortable with. Don't worry about getting
-the whole thing working flawlessly, this is more to see how you structure a program. Please
-don't spend more than a few hours on it.
+## Prerequisites
 
-## Submission
+- Ruby
+- Bundler
+- Node.js with NPM
+- Gulp (f you want to compile the Sass code but I have included the compiled file
+for simpilicity)
 
-Please fork this repository, write some code and update this README with a guide of how to
-run it.
+## Getting started
+
+- Clone this repo and `cd` into the directory via the terminal
+- Run `bundle install`
+- Run `npm install`
+- Run `Gulp` if you want to compile the Sass code
+- Run `ruby app.rb` and go to `http://localhost:4567` in your browser
